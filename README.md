@@ -34,8 +34,8 @@ The game lasts for a maximum of 2000 rounds. If no team wins within this limit, 
 │   └── laporan.pdf
 ├── src/
 │   ├── mainbot/
-│   ├── alternative-bots-1/
-│   └── alternative-bots-2/
+│   ├── alternative_bots_1/
+│   └── alternative_bots_2/
 └── test/
 ```
 
@@ -99,8 +99,8 @@ For targeting behavior:
 - Splasher evaluates all possible splash centers within attack range and selects the location with the highest score, prioritizing enemy territory capture.
 - Mopper prioritizes removing enemy paint near ruins to enable faster tower construction.
 
-### 2. alternative-bots-1
-alternative-bots-1 uses a greedy strategy similar to Alternative 1 for state priority, movement, splasher targeting, and mopper targeting, but introduces improvements in tower decisions, combat rules, and spawn composition.
+### 2. alternative_bots_1
+alternative_bots_1 uses a greedy strategy similar to Alternative 1 for state priority, movement, splasher targeting, and mopper targeting, but introduces improvements in tower decisions, combat rules, and spawn composition.
 
 Before building resource towers, the bot evaluates whether a Defense Tower should be constructed.  
 A defense value is calculated based on the number of existing defense towers multiplied by their buff value. If the defense value is sufficiently high and defense towers represent less than 35% of all towers, a defense tower may be built near enemy areas.
@@ -120,8 +120,8 @@ Combat behavior is also modified. Unlike Alternative 1, this bot can attack enem
 Robot spawning adapts based on defensive strength. If there are at least two defense towers, the spawn ratio shifts from 3:2 (Soldier:Mopper) to 4:1. When resources are abundant and the defense level is strong, the ratio becomes 3:1:1 (Soldier:Splasher:Mopper).
 
 ---
-### 3. alternative-bots-2
-alternative-bots-2 implements a simpler greedy strategy focused on rapidly building Special Resource Patterns (SRP) to increase passive income.
+### 3. alternative_bots_2
+alternative_bots_2 implements a simpler greedy strategy focused on rapidly building Special Resource Patterns (SRP) to increase passive income.
 
 The main heuristic is to construct SRPs as early as possible and expand them to neighboring positions, creating a chain of resource patterns that generate +3 chips per turn each.
 
