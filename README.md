@@ -153,7 +153,7 @@ cd Tubes1_Kanarazu-Katsu
 
 
 ```
-gradlew build
+gradlew clean build
 ```
 
 ### 3. Run the Client
