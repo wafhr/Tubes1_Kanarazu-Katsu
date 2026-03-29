@@ -1,4 +1,4 @@
-package mainbot;
+package main_bot;
 
 
 public class Constants {

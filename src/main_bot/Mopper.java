@@ -1,7 +1,7 @@
-package mainbot;
+package main_bot;
 
 import battlecode.common.*;
-import mainbot.*;
+import main_bot.*;
 
 
 public class Mopper extends Unit {
